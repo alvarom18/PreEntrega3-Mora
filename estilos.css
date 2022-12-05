@@ -32,6 +32,14 @@ ul{
 
 header{
     background:#000;
+    height: 65px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navbar{
+    margin-right: 10px;
 }
 
 .navbar__link{
@@ -57,13 +65,10 @@ header{
     padding-left: 5px;
 }
 
-.navbar{
-    text-align:right;
-}
 
 .pie-pagina{
-    text-align: center;
-    margin-top: 430px;
+    display: flex;
+    justify-content:center;
 }
 
 .hero__imagen{
@@ -191,7 +196,6 @@ header{
     padding: 20px;  
     width: 260px;
     margin: 10px;
-    margin-bottom: 70px;
     display: inline-block;
     vertical-align: top;
 }
@@ -210,9 +214,11 @@ header{
 
 .seccion__procesador {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
@@ -248,16 +254,6 @@ header{
     margin: 10px;
     background-size: cover;
 }
-/* .caracteristica__titulo{
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-.caracteristica__parrafo{
-    margin-top: 0px;
-    margin-bottom: 10px;
-
-} */
 
 .camara__titulo{
     background-color: #eee;
@@ -566,7 +562,7 @@ header{
     background-color: #eee;
     width: 400px;
     border-radius: 10px;
-    padding: 15px 15px;
+    padding: 15px;
     margin: auto;
 }
 
