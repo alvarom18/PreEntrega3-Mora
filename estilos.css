@@ -1,3 +1,9 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
 @font-face {
     font-family: 'Lato';
     src: url('./recursos/tipografias/Lato-Regular.ttf');
@@ -8,12 +14,6 @@
     font-family: 'Lato';
     src: url('./recursos/tipografias/Lato-Bold.ttf');
     font-weight: bold;
-}
-
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing:border-box;
 }
 
 body{
@@ -36,6 +36,8 @@ header{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    /* background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 64%, rgba(224,224,224,1) 98%); */
 }
 
 .navbar{
@@ -80,6 +82,14 @@ header{
     color: white;
 }
 
+.tarjeta{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /*Pagina Samsung*/
 
 .tarjeta-samsung {
@@ -89,6 +99,12 @@ header{
     width: 292px;
     margin: 10px;
     display: inline-block;
+}
+
+.grupo-tarjeta-samsung{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr)
 }
 
 .tarjeta-samsung__imagen {
@@ -190,26 +206,16 @@ header{
     margin: 15px;
 }
 
-.procesador__titulo{
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
-    width: 260px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
+.caracteristica{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 360px;
 }
 
-.especificaciones__procesador {
+.procesador__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 10px; 
     width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__procesador {
@@ -225,320 +231,170 @@ header{
 
 .pantalla__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px;  
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__pantalla {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__pantalla {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .camara__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px;  
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__camara {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__camara {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .memoria__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px;  
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__memoria {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__memoria {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .redes__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px;  
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__redes {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__redes {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .conectividad__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px;  
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__conectividad {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__conectividad {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .sistema__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px;  
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__sistema {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__sistema {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .sensores__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px; 
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__sensores {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__sensores {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .dimensiones__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px; 
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__dimensiones {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__dimensiones {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .bateria__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px; 
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__bateria {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__bateria {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
 
 .audio__titulo{
     background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;  
+    border-radius: 10px; 
     width: 260px;
-    margin: 10px;
-    margin-bottom: 70px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.especificaciones__audio {
-    background-color: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 260px;
-    margin: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .seccion__audio {
     background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    /* width: 1000px; */
     margin: 10px;
     background-size: cover;
 }
@@ -571,5 +427,18 @@ header{
     display: grid;
     gap: 10px;
     grid-auto-columns: 100%;
-}   
-   
+} 
+
+.tarjeta img{
+    animation: ease-in;
+}
+
+@keyframes animation{
+
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
