@@ -1,0 +1,22 @@
+{
+  "name": "mora",
+  "version": "1.0.0",
+  "description": "Proyecto",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss scss/main.scss css/estilos.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarom18/PreEntrega2-Mora.git"
+  },
+  "author": "Alvaro Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarom18/PreEntrega2-Mora/issues"
+  },
+  "homepage": "https://github.com/alvarom18/PreEntrega2-Mora#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

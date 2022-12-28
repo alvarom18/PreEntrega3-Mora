@@ -19,8 +19,8 @@
 body{
     background: #fff;
     font-family: 'Lato';
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 64%, rgba(224,224,224,1) 98%);
+    /* background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 64%, rgba(224,224,224,1) 98%); */
 }
 
 a{
@@ -43,6 +43,11 @@ header{
 
 .navbar{
     margin-right: 10px;
+}
+
+.navbar a:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 .navbar__link{
@@ -72,17 +77,29 @@ header{
 .pie-pagina{
     display: flex;
     justify-content:center;
+    margin-top: 5%;
 }
 
-.hero__imagen{
-    background-image: url('./recursos/imagenes/hero.jpg');
+.hero__contenido{
+    background-image: url('./recursos/imagenes/hero-samsung-galaxy-s22+.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 450px;
     color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
+.hero__titulo{
+    color: #000;
+}
+
+.hero__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
 .tarjeta{
     display: flex;
     align-items: center;
@@ -421,6 +438,7 @@ header{
     border-radius: 10px;
     padding: 15px;
     margin: auto;
+    margin-top: 50px;
 }
 
 .forma__contenedor{
@@ -431,12 +449,12 @@ header{
 } 
 
 .tarjeta-samsung__imagen{
-    animation: ease-in animacion 1s;
+    animation: ease-in animacion 0.5s;
 }
 
 @keyframes animacion{
 
-    0%{
+    90%{
         transform: scale(0);
     }
     100%{
