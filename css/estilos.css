@@ -1,0 +1,389 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../recursos/tipografias/Lato-Regular.ttf");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../recursos/tipografias/Lato-Bold.ttf");
+  font-weight: bold; }
+
+body {
+  background: #fff;
+  font-family: 'Lato'; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style-type: none; }
+
+.pie-pagina {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%; }
+
+header {
+  background: #000;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header span {
+  display: none; }
+
+.navbars {
+  margin-right: 10px; }
+  .navbars__link {
+    color: #fff; }
+  .navbars__pagina {
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px; }
+
+.navbars a:hover {
+  background-color: #fff;
+  color: #000; }
+
+.hero__contenido {
+  background-image: url("../recursos/imagenes/hero-samsung-galaxy-s22+.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.hero__titulo {
+  color: #000; }
+
+.hero__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*Pagina Samsung*/
+.tarjeta-samsung {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  width: 292px;
+  margin: 10px;
+  display: inline-block; }
+
+.grupo-tarjeta-samsung {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.tarjeta-samsung__imagen {
+  border-radius: 10px; }
+
+.lista {
+  padding: 5px; }
+
+.lista__samsung {
+  padding: 5px; }
+
+.watch {
+  padding-top: 50px;
+  padding-left: 10px; }
+
+.tarjeta-samsung-watch {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  width: 292px;
+  margin: 10px;
+  display: inline-block; }
+
+.tarjeta-samsung-watch__imagen {
+  border-radius: 10px; }
+
+.samsung__titulo {
+  padding-left: 10px; }
+
+.smartphone__titulo {
+  padding-left: 10px; }
+
+.tarjeta-samsung-truewireless {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  width: 292px;
+  margin: 10px;
+  display: inline-block; }
+
+.tarjeta-samsung-truewireless__imagen {
+  border-radius: 10px; }
+
+.truewireless {
+  padding-left: 10px;
+  padding-top: 50px; }
+
+.apple__encabezado {
+  padding-left: 10px; }
+
+.iphone__titulo {
+  padding-top: 50px; }
+
+.tarjeta-apple {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  width: 292px;
+  margin: 10px;
+  display: inline-block; }
+
+.tarjeta-apple__imagen {
+  border-radius: 10px; }
+
+.lista__apple {
+  padding: 5px; }
+
+.apple-watch__titulo {
+  padding-top: 50px;
+  padding-left: 10px; }
+
+.apple-airpods__titulo {
+  padding-top: 50px;
+  padding-left: 10px; }
+
+/* Pagina Samsung Galaxy S22 */
+.galaxys22__foto {
+  width: 450px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 15px; }
+
+.caracteristica {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 360px; }
+
+.procesador__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__procesador {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.pantalla__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__pantalla {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.camara__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__camara {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.memoria__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__memoria {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.redes__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__redes {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.conectividad__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__conectividad {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.sistema__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__sistema {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.sensores__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__sensores {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.dimensiones__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__dimensiones {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.bateria__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__bateria {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+.audio__titulo {
+  background-color: #eee;
+  border-radius: 10px;
+  width: 260px; }
+
+.seccion__audio {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-size: cover; }
+
+/* Pagina Iphone 14 Pro */
+.iphone14__foto {
+  width: 450px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 15px; }
+
+/* Pagina Contacto */
+.forma__input {
+  font-family: inherit; }
+
+.forma {
+  background-color: #eee;
+  width: 400px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 50px; }
+
+.forma__contenedor {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-auto-columns: 100%; }
+
+.tarjeta-samsung__imagen {
+  animation: ease-in animacion 0.5s; }
+
+@keyframes animacion {
+  90% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@media only screen and (max-width: 575px) {
+  .grupo-tarjeta-samsung {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    gap: 20px; }
+  .tarjeta-samsung {
+    width: 272px; }
+  header ul {
+    display: none; }
+  header span {
+    display: block; } }

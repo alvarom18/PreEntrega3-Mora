@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../recursos/tipografias/Lato-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../recursos/tipografias/Lato-Bold.ttf');
+    font-weight: bold;
+}
+
+body{
+    background: #fff;
+    font-family: 'Lato';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.pie-pagina{
+    display: flex;
+    justify-content:center;
+    margin-top: 5%;
+}
