@@ -30,8 +30,24 @@ ul{
     list-style-type: none;
 }
 
-.pie-pagina{
-    display: flex;
-    justify-content:center;
-    margin-top: 5%;
-}
+@media only screen and (max-width: 575px){
+
+    .grupo-tarjeta-samsung{
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(5, 1fr);
+     justify-content: center;
+     gap: 20px;
+    }
+ 
+    .tarjeta-samsung{
+     width: 272px;
+    }
+ 
+    header ul{
+     display: none;
+    }
+    header span{
+     display: block;
+    }
+ }
+ 

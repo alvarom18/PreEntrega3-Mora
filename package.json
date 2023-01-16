@@ -4,7 +4,7 @@
   "description": "Proyecto",
   "main": "index.js",
   "scripts": {
-    "build-sass": "node-sass --include-path scss scss/main.scss css/estilos.css"
+    "build-sass": "node-sass --include-path scss scss/main.scss css/estilos.css -w"
   },
   "repository": {
     "type": "git",

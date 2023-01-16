@@ -1,57 +1,3 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: 'Lato';
-  src: url("../recursos/tipografias/Lato-Regular.ttf");
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Lato';
-  src: url("../recursos/tipografias/Lato-Bold.ttf");
-  font-weight: bold; }
-
-body {
-  background: #fff;
-  font-family: 'Lato'; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-ul {
-  list-style-type: none; }
-
-.pie-pagina {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%; }
-
-header {
-  background: #000;
-  height: 65px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-header span {
-  display: none; }
-
-.navbars {
-  margin-right: 10px; }
-  .navbars__link {
-    color: #fff; }
-  .navbars__pagina {
-    display: inline-block;
-    font-weight: bold;
-    padding: 5px; }
-
-.navbars a:hover {
-  background-color: #fff;
-  color: #000; }
-
 .hero__contenido {
   background-image: url("../recursos/imagenes/hero-samsung-galaxy-s22+.png");
   background-repeat: no-repeat;
@@ -68,16 +14,42 @@ header span {
 .hero__contenedor {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: center; }
 
-.tarjeta {
+#itemcarrusel {
+  height: 450px;
+  overflow: hidden; }
+
+.carrusel {
+  height: 100%;
+  position: relative; }
+
+.carrusel__tarjeta {
+  height: 100%; }
+
+.carrusel__flechas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  justify-content: space-between;
+  padding: 20px; }
 
-/*Pagina Samsung*/
+#carrusel__tarjeta-1 {
+  background-color: white; }
+
+#carrusel__tarjeta-2 {
+  background-color: #2be243; }
+
+#carrusel__tarjeta-3 {
+  background-color: #e26e2b; }
+
+.puntos {
+  display: flex;
+  justify-content: center; }
+
 .tarjeta-samsung {
   background-color: #eee;
   border-radius: 10px;
@@ -85,11 +57,6 @@ header span {
   width: 292px;
   margin: 10px;
   display: inline-block; }
-
-.grupo-tarjeta-samsung {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
 
 .tarjeta-samsung__imagen {
   border-radius: 10px; }
@@ -164,7 +131,6 @@ header span {
   padding-top: 50px;
   padding-left: 10px; }
 
-/* Pagina Samsung Galaxy S22 */
 .galaxys22__foto {
   width: 450px;
   height: 600px;
@@ -366,14 +332,31 @@ header span {
   gap: 10px;
   grid-auto-columns: 100%; }
 
-.tarjeta-samsung__imagen {
-  animation: ease-in animacion 0.5s; }
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
 
-@keyframes animacion {
-  90% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1); } }
+@font-face {
+  font-family: 'Lato';
+  src: url("../recursos/tipografias/Lato-Regular.ttf");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../recursos/tipografias/Lato-Bold.ttf");
+  font-weight: bold; }
+
+body {
+  background: #fff;
+  font-family: 'Lato'; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style-type: none; }
 
 @media only screen and (max-width: 575px) {
   .grupo-tarjeta-samsung {
@@ -387,3 +370,90 @@ header span {
     display: none; }
   header span {
     display: block; } }
+
+header {
+  background: #000;
+  padding: 30px 20px; }
+
+.encabezado {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header span {
+  display: none; }
+
+.navbars {
+  margin-right: 10px; }
+  .navbars__link {
+    color: #fff; }
+  .navbars__pagina {
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px; }
+
+.navbars a:hover {
+  background-color: #fff;
+  color: #000; }
+
+.pie-pagina {
+  width: 100%;
+  background-color: black;
+  color: white; }
+
+.pie-pagina a {
+  color: white; }
+
+.pie-pagina__contenedor-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 45px 0px; }
+
+.pie-pagina__contenedor-1 .box h1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pie-pagina__contenedor-1 .box h2 {
+  margin-bottom: 25px;
+  font-size: 20px; }
+
+.pie-pagina__contenedor-1 .box p {
+  margin-bottom: 10px; }
+
+.pie-pagina__contenedor-1 .red-social a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px; }
+
+.facebook a {
+  transition: all 300ms ease; }
+
+.facebook a:hover {
+  color: #3b5998; }
+
+.instagram a {
+  transition: all 300ms ease; }
+
+.instagram a:hover {
+  color: #bc2a8d; }
+
+.twitter a {
+  transition: all 300ms ease; }
+
+.twitter a:hover {
+  color: #00acee; }
+
+.youtube a {
+  transition: all 300ms ease; }
+
+.youtube a:hover {
+  color: #c4302b; }

@@ -1,0 +1,59 @@
+.hero__contenido{
+    background-image: url('../recursos/imagenes/hero-samsung-galaxy-s22+.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.hero__titulo{
+    color: #000;
+}
+
+.hero__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemcarrusel{
+    height: 450px;
+    overflow: hidden;
+}
+.carrusel{
+    height: 100%;
+    position: relative;
+}
+.carrusel__tarjeta{
+    height: 100%;
+}
+.carrusel__flechas{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+ #carrusel__tarjeta-1{
+    background-color:white;
+}
+
+#carrusel__tarjeta-2{
+    background-color: rgb(43, 226, 67);
+}
+
+#carrusel__tarjeta-3{
+    background-color: rgb(226, 110, 43);
+}
+
+.puntos{
+    display: flex;
+    justify-content: center;
+}
